@@ -8,7 +8,7 @@
 import UIKit
 
 /// Exposes common wireframe functionality and helpers to push/present and pop other wireframes
-class BaseWireframe {
+open class BaseWireframe {
     private unowned var _viewController: UIViewController
     
     // this is to retain view controller reference upon first access
@@ -22,14 +22,14 @@ class BaseWireframe {
     }
 }
 
-extension BaseWireframe: WireframeInterface {
+ extension BaseWireframe: WireframeInterface {
     /// The wireframe's internal ViewController
-    var viewController: UIViewController {
+    public var viewController: UIViewController {
         defer { _temporaryStoredViewController = nil }
         return _viewController
     }
     /// The wireframe's internal ViewController's navigation controller
-    var navigationController: UINavigationController? {
+    public var navigationController: UINavigationController? {
         return viewController.navigationController
     }
 }

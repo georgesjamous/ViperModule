@@ -1,2 +1,2 @@
 
-protocol InteractorInterface: class {}
+public protocol InteractorInterface: class {}

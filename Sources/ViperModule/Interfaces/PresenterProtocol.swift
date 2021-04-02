@@ -1,2 +1,2 @@
 
-protocol PresenterInterface: class {}
+public protocol PresenterInterface: class {}

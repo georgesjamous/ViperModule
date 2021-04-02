@@ -1,2 +1,2 @@
 
-protocol ViewInterface: class {}
+public protocol ViewInterface: class {}

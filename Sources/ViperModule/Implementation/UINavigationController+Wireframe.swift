@@ -1,6 +1,6 @@
 import UIKit
 
-extension UINavigationController {
+public extension UINavigationController {
     /// Helper function to push a wireframe
     /// - Parameter wireframe: The wireframe to push
     func pushWireframe(_ wireframe: BaseWireframe, animated: Bool = true) {
