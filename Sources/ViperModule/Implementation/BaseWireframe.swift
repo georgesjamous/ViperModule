@@ -16,7 +16,7 @@ open class BaseWireframe {
     private var _temporaryStoredViewController: UIViewController?
     
     /// Initialize the wireframe with a view controller
-    init(viewController: UIViewController) {
+    public init(viewController: UIViewController) {
         _temporaryStoredViewController = viewController
         _viewController = viewController
     }
